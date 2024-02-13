@@ -12,7 +12,7 @@ This guide explains how to set up cross-region replication for an AWS S3 bucket 
 - [IAM Policies](#iam-policies)
   - [Web Developer](#web-developer)
   - [Database Administrator](#database-administrator)
-  - [Elastic Computation User](#elastic-computation-user)
+  - [Data analyst](#Data-analyst-user)
 
 ## Project Overview
 
