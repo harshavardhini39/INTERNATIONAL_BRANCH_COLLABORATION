@@ -56,13 +56,14 @@ The database administrator will have access to AWS RDS and AWS DynamoDB for data
 
 2. Assign this custom policy to the IAM user representing the database administrator.
 
-### Elastic Computation User
+### Data Analyst
 
-#### AWS EC2 Full Access
+#### Works with Data
+This role is used by AWS Glue to access other AWS services and resources required for ETL operations.
 
-The user responsible for elastic computation tasks will have full access to AWS EC2 instances.
-
-1. Assign the `AmazonEC2FullAccess` policy to the IAM user representing the elastic computation user.
+1. AWSGlueServiceRole managed policy, which provides permissions for Glue actions.
+2. Additional permissions to read from and write to Amazon S3 buckets where your data is stored.
+3. Permissions to access any other AWS services required for your ETL process, such as Amazon RDS, Amazon DynamoDB, etc., depending on your specific use case.
 
 ## Conclusion
 
